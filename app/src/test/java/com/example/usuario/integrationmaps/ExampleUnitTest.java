@@ -1,10 +1,12 @@
 package com.example.usuario.integrationmaps;
 
 import com.example.usuario.mailsender.GMailSender;
+import com.example.usuario.mailsender.MailSender;
 
 import org.databene.contiperf.PerfTest;
 import org.databene.contiperf.Required;
 import org.junit.Test;
+import org.mockito.Mockito;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -65,4 +67,7 @@ public class ExampleUnitTest {
             System.out.println(array.get(i).getMunicipio());
         }
     }
+
+
+
 }

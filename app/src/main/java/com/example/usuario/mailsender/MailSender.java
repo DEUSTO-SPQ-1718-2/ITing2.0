@@ -18,6 +18,46 @@ public class MailSender extends AsyncTask<String, Integer, String> {
     private String codReserva;
     Logger log = LoggerFactory.getLogger(MailSender.class);
 
+    public String getNombreEmisor() {
+        return nombreEmisor;
+    }
+
+    public void setNombreEmisor(String nombreEmisor) {
+        this.nombreEmisor = nombreEmisor;
+    }
+
+    public String getNombreReceptor() {
+        return nombreReceptor;
+    }
+
+    public void setNombreReceptor(String nombreReceptor) {
+        this.nombreReceptor = nombreReceptor;
+    }
+
+    public String getRestaurante() {
+        return restaurante;
+    }
+
+    public void setRestaurante(String restaurante) {
+        this.restaurante = restaurante;
+    }
+
+    public String getCodReserva() {
+        return codReserva;
+    }
+
+    public void setCodReserva(String codReserva) {
+        this.codReserva = codReserva;
+    }
+
+    public Logger getLog() {
+        return log;
+    }
+
+    public void setLog(Logger log) {
+        this.log = log;
+    }
+
     public MailSender(String nombreEmisor, String nombreReceptor, String restaurante, String codReserva){
         this.nombreEmisor = nombreEmisor;
         this.nombreReceptor = nombreReceptor;
